@@ -48,6 +48,7 @@
         methods: {
             selectDemo: function (params) {
                 if (params) {
+                   // this.$axios.get("http://localhost:8085/lwz/Account/info")
                     this.$axios.get("http://127.0.0.1:8000/api/persons/sex")
                         .then((response) => {
                             this.type_options = response.data;
@@ -56,7 +57,7 @@
                         console.log(response)
                     });
                 }
-
+               
             },
             filterResultData: _.debounce(
                 function () {

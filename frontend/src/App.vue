@@ -1,6 +1,7 @@
 <template>
     <div class="wrapper">
         <db-header></db-header>
+        <login></login>
         <el-row class="container">
             <el-col :span="4" class="menu">
                 <db-sidebar></db-sidebar>
@@ -10,8 +11,6 @@
                 <db-table></db-table>
 
             </el-col>
-
-
         </el-row>
 
         <el-row>
@@ -33,15 +32,17 @@
     import DbTable from './components/DbTable.vue'
     import DbFooter from './components/DbFooter.vue'
     import ElRow from "element-ui/packages/row/src/row";
+    import login from "./components/login/Logintest.vue"
 
     export default {
         name: 'app',
         components: {
-            ElRow, DbHeader,
-            DbSidebar,
-            DbFilterinput,
-            DbTable,
-            DbFooter
+            // ElRow, DbHeader,
+            // DbSidebar,
+            // DbFilterinput,
+            // DbTable,
+            //DbFooter,
+            login
         },
     }
 

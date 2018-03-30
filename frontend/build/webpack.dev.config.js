@@ -24,6 +24,7 @@ module.exports = merge(baseWebpackConfig, {
     module: {
         rules: utils.styleLoaders()
     },
+    devtool: '#cheap-module-eval-source-map',
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
         new HtmlWebpackPlugin({
