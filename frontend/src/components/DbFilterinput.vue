@@ -1,6 +1,5 @@
 <template>
     <el-form :inline="true" :model="formInline">
-
         <el-form-item label="Sex">
             <el-select v-model="formInline.sex" clearable placeholder="select sex"
                        v-on:visible-change="selectDemo">

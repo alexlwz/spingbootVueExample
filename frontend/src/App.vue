@@ -32,7 +32,8 @@
     import DbTable from './components/DbTable.vue'
     import DbFooter from './components/DbFooter.vue'
     import ElRow from "element-ui/packages/row/src/row";
-    import login from "./components/login/Logintest.vue"
+    import login from "./components/login/Logintest.vue";
+   // import Emit from "./components/emit/testEmit.vue"
 
     export default {
         name: 'app',
@@ -41,8 +42,9 @@
             // DbSidebar,
             // DbFilterinput,
             // DbTable,
-            //DbFooter,
+            DbFooter,
             login
+            //Emit
         },
     }
 
