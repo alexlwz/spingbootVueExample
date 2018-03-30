@@ -11,6 +11,7 @@
                 <el-input type="password" id="password" v-model="formName.password" @blur="inputBlur('password',formName.password)"></el-input>
                 <p>{{formName.passwordError}}</p>
             </el-form-item>
+            <p><input name="auto" id="auto" type="checkbox" onClick="auto_ck(this);" checked>自动登录</p>
             <el-button type="primary" @click="submitForm('formName')" v-bind:disabled="formName.beDisabled">提交</el-button>
             <el-button @click="resetForm">重置</el-button>
         </el-form>              
