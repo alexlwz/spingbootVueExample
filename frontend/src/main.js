@@ -21,16 +21,20 @@ import App from './App.vue'
 import 'element-ui/lib/theme-default/index.css'
 import lang from 'element-ui/lib/locale/lang/en'
 import locale from 'element-ui/lib/locale'
-
+import router from "./router/router.js" 
 // more grace import third package !
 import moment from 'moment'
 import axios from 'axios'
 import curvejs from 'curvejs'
+//import VueRouter from 'vue-router'
+ 
 
 Object.defineProperty(Vue.prototype, '$moment', { value: moment });
 Object.defineProperty(Vue.prototype, '$axios', { value: axios });
 Object.defineProperty(Vue.prototype, '$curvejs', { value: curvejs });
+//Object.defineProperty(Vue.prototype, '$router', { value: VueRouter });
 
+//Vue.use(VueRouter);
 Vue.use(Button);
 Vue.use(Select);
 Vue.use(Row);
@@ -51,6 +55,7 @@ locale.use(lang);
 // eslint-disable-next-line no-new
 new Vue({
     el: '#app',
+    router,
     render: h => h(App)
 });
 

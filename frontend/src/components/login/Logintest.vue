@@ -52,10 +52,12 @@ import Axios from 'axios'
                 var user = this.formName.user,
                     password = this.formName.password;
                     console.log(user,password)
+                this.$router.push("about")
                 Axios.get('../../src/php/login.php?user='+user+'&password='+password)
                      .then(function(res){
                         console.log(res)
-
+                        //this.$router.push({'path' : /cash/cashList})
+                        //this.$router.push("home")
                      })
                      .catch(function(){
 

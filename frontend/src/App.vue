@@ -2,6 +2,7 @@
     <div class="wrapper">
         <db-header></db-header>
         <login></login>
+        <!--
         <el-row class="container">
             <el-col :span="4" class="menu">
                 <db-sidebar></db-sidebar>
@@ -21,6 +22,13 @@
 
             </el-col>
         </el-row>
+        -->
+        <header>
+            <!-- router-link 定义点击后导航到哪个路径下 -->
+            <router-link to="/home">a</router-link>
+            <router-link to="/about">About</router-link>
+        </header>    
+        <router-view></router-view>
     </div>
 </template>
 
@@ -34,6 +42,7 @@
     import ElRow from "element-ui/packages/row/src/row";
     import login from "./components/login/Logintest.vue";
    // import Emit from "./components/emit/testEmit.vue"
+  
 
     export default {
         name: 'app',
