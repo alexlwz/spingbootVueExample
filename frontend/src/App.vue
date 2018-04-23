@@ -25,8 +25,8 @@
         -->
         <header>
             <!-- router-link 定义点击后导航到哪个路径下 -->
-            <router-link to="/home">a</router-link>
-            <router-link to="/about">About</router-link>
+            <!-- <router-link to="/home">home</router-link> -->
+            <!-- <router-link to="/about">About</router-link> -->
         </header>    
         <router-view></router-view>
     </div>

@@ -4,6 +4,7 @@ import VueRouter from "vue-router";
 // 引入组件
 import home from "../components/emit/home.vue";
 import about from "../components/emit/about.vue";
+import login from "../components/login/Logintest.vue";
 
 // 要告诉 vue 使用 vueRouter
 Vue.use(VueRouter);
@@ -18,8 +19,12 @@ const routes = [
         component: about
     },
     {
+        path: "/login",
+        component : login
+    },
+    {
         path: '/', 
-        redirect: '/home' 
+        redirect: '/login' 
     }
 ]
 
